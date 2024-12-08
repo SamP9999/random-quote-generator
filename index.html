@@ -3,40 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motivational Quote Generator</title>
+  <title>Quote Generator</title>
   <style>
-    body{
-      font-family: Arial, sans-serif;
+   
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f3f4f7;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f0f0f0;
+      color: #333;
     }
+
     .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
+      width: 80%;
+      max-width: 600px;
     }
-    .quote{
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #5e5e5e;
+    }
+
+    .quote {
       font-size: 24px;
       margin-bottom: 20px;
+      font-style: italic;
+      color: #444;
     }
-    button{
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: crimson;
+
+    button {
+      background-color: #FF5733;
       color: white;
+      padding: 15px 30px;
+      font-size: 18px;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      background-color: #C0392B;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    button:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <h1>Quote Generator</h1>
     <p class="quote">Click below to get a quote!</p>
     <button onclick="generateQuote()">Get Quote</button>
+    <footer>Powered by ZenQuotes</footer>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
