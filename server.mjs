@@ -8,7 +8,7 @@ const port = 3000;
 
 app.use(cors()); // Enable Cross-Origin Resource Sharing
 
-use(express.static(path.join(path.resolve(), 'public')));
+app.use(express.static(path.join(path.resolve(), 'public')));
 
 // Endpoint to serve the random quote
 app.get('/quote', async (req, res) => {
